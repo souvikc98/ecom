@@ -107,6 +107,3 @@ $route['orderDetails/(:any)'] = 'AdminOrderDetails/orderDetails/$1';
 
 $route['low-stock-product'] = 'AdminProduct/lowStockProducts';
 
-$route['send-email-low-stock-products'] = 'LowProductCorn/checkLowStockProducts';
-
-

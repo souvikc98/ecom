@@ -3,6 +3,7 @@
 class AdminOrderDetails_model extends CI_Model
 {
     public function getAllOrderHistoryByStatus($status) {
+
         $this->db->select('order_id, SUM(p_total_price) as total_amount, created_at');
         $this->db->from('order_details');
         $this->db->where("status", $status);
